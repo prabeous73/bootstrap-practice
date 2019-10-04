@@ -67,3 +67,9 @@
 #c-head h2{
     color: white;
 }
+
+#carouselButton{
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
