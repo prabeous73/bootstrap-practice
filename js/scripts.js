@@ -6,7 +6,6 @@
 
 
 //Jquery for carousel play/pause buttons
-
 $(document).ready(function() {
     $('#mycarousel').carousel({ interval: 2000 });
     $('#carouselButton').click(function() {
@@ -21,4 +20,20 @@ $(document).ready(function() {
             $('#carouselButton').children('span').addClass('fa-pause');
         }
     });
-})
+});
+
+
+//Jquery for Modal funtionalities
+$(document).ready(function() {
+
+    // Show login modal on click
+    $('a[href$="#loginModal"]').on( "click", function() {
+        $('#loginModal').modal('show');
+    } );
+
+    // Show reserve table modal on click
+    $('a[href$="#reserveTableModal"]').on( "click", function() {
+        $('#reserveTableModal').modal('show');
+    } );
+
+});
