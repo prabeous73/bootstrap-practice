@@ -27,12 +27,12 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     // Show login modal on click
-    $('a[href$="#loginModal"]').on( "click", function() {
+    $('#loginLink').click(function() {
         $('#loginModal').modal('show');
     } );
 
     // Show reserve table modal on click
-    $('a[href$="#reserveTableModal"]').on( "click", function() {
+    $('#reserveTableLink').click(function() {
         $('#reserveTableModal').modal('show');
     } );
 
